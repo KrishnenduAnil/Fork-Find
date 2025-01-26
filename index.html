@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Finder</h1>
+        
+        <!-- Ingredients Selection Section -->
+        <div id="ingredient-selection" class="ingredient-selection">
+            <h2>Choose or Type Your Ingredients</h2>
+
+            <!-- Ingredient Images (for selecting) -->
+            <div class="ingredients">
+                <img src="https://images.unsplash.com/photo-1607305387299-a3d9611cd469?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="tomato" class="ingredient" data-name="tomato">
+                <img src="https://images.unsplash.com/photo-1639427444459-85a1b6ac2d68?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhcnJvdHxlbnwwfHwwfHx8MA%3D%3D" alt="Carrot" class="ingredient" data-name="carrot">
+                <img src="https://images.unsplash.com/photo-1617611647086-bccca8c2cf84?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGVnZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Egg" class="ingredient" data-name="egg">
+              <img src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hpY2tlbnxlbnwwfHwwfHx8MA%3D%3D" alt="Chicken" class="ingredient" data-name="chicken">
+                <img src="https://plus.unsplash.com/premium_photo-1664647841082-6e19aa8969d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YnJpbmphbHxlbnwwfHwwfHx8MA%3D%3D" alt="brinjal" class="ingredient" data-name="brinjal">
+                <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG90YXRvfGVufDB8fDB8fHww" alt="potato" class="ingredient" data-name="potato">
+                <img src="https://images.unsplash.com/photo-1584615467033-75627d04dffe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2F1bGlmbG93ZXJ8ZW58MHx8MHx8fDA%3D" alt="cauliflower" class="ingredient" data-name="cauliflower">
+                <img src="https://images.unsplash.com/photo-1591586007768-40725cc562a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FiYmFnZXxlbnwwfHwwfHx8MA%3D%3D" alt="cabbage" class="ingredient" data-name="cabbage">
+                <img src="https://images.unsplash.com/photo-1593105544559-ecb03bf76f82?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmVldHJvb3R8ZW58MHx8MHx8fDA%3D" alt="beetroot" class="ingredient" data-name="beetroot">
+                <img src="https://images.unsplash.com/photo-1580910365145-862a086868c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c3BpbmFjaHxlbnwwfHwwfHx8MA%3D%3D" alt="spinach" class="ingredient" data-name="spinach">
+                <img src="https://images.unsplash.com/photo-1632742315671-d77e6feed874?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG9rcmF8ZW58MHx8MHx8fDA%3D" alt="ladys finger" class="ingredient" data-name="ladys finger">
+                <img src="https://images.unsplash.com/photo-1589621316382-008455b857cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y3VjdW1iZXJ8ZW58MHx8MHx8fDA%3D" alt="cucumber" class="ingredient" data-name="cucumber">
+                <img src="https://plus.unsplash.com/premium_photo-1668363229859-571d01b5a385?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cHVtcGtpbnxlbnwwfHwwfHx8MA%3D%3D" alt="pumpkin" class="ingredient" data-name="pumpkin">
+                <img src="https://media.istockphoto.com/id/1256627637/photo/healthy-drumsticks-with-wooden-backrgound.jpg?s=2048x2048&w=is&k=20&c=gUZhI7eT_xOtxvetqCyMEUor_s6ix5gO5jqoD8YXnIQ=" alt="drumstick" class="ingredient" data-name="drumstick">
+                <img src="https://media.istockphoto.com/id/1414694752/photo/vegetable-base-white-gourd.webp?a=1&b=1&s=612x612&w=0&k=20&c=-2vC3h8uC8RORDHPtat6uvWAGig8zuTIg-cphz3oW10=" alt="ashgourd" class="ingredient" data-name="ashgourd">
+                <img src="https://plus.unsplash.com/premium_photo-1725634031127-c9f71fc68a81?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Yml0dGVyZ291cmR8ZW58MHx8MHx8fDA%3D" alt="bittergaurd" class="ingredient" data-name="bittergourd">
+                <!-- More images can be added as needed -->
+            </div>
+
+            <!-- Input field for typing ingredients -->
+            <div class="ingredient-input">
+                <label for="typed-ingredients">Or type your ingredients (comma separated):</label>
+                <input type="text" id="typed-ingredients" placeholder="e.g., tomato, carrot, egg" />
+            </div>
+        </div>
+        
+        <!-- Form for submitting selected ingredients -->
+        <form id="ingredient-form" class="form-center">
+            <input type="hidden" id="ingredients" name="ingredients" required>
+            <button type="submit" class="btn">Find Recipes</button>
+        </form>
+
+        <!-- Loading message (hidden by default) -->
+        <div id="loading-message" class="loading-message">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="branches"></div>
+                <div class="apples">
+                    <div class="apple apple1"></div>
+                    <div class="apple apple2"></div>
+                    <div class="apple apple3"></div>
+                    <div class="apple apple4"></div>
+                </div>
+            </div>
+            <p>Loading recipes...🍏</p>
+        </div>
+
+        <!-- Recipe results will be shown here -->
+        <div id="recipe-results" class="recipes">
+            <!-- Recipes will be displayed dynamically by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
