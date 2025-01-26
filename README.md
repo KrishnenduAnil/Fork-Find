@@ -311,4 +311,9 @@ The API processes the request, looks up recipes, and sends back a JSON response 
 Recipe Results (Frontend):
 
 The JavaScript code on the frontend processes the JSON data, extracts recipe titles and links, and displays them to the user.
+# Video
+https://krishnenduanil.github.io/Fork-Find/
+# Team contribution
+### Krishnendu Anil - backend developed
+### Avany Manoj - frontend developed
 
