@@ -12,4 +12,7 @@
   ### Every women who cooks daily has a query about what to cook today with the ingredients she have 
 ## The Solution
   ### Here is a solution for the query by inputing the ingredients she have and our project provides recipes with them
+## Technical details
+  ### Languages used are html css js
+  
   
